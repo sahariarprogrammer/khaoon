@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>filter javascript</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet"href="style.css">
+ <link href="a/all.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<!-- heading -->
+<div class="row mx-5 pt-3">
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3 mx-auto">
+				<img src="logo.svg">
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-3  col-sm-10 col-12 mx-auto">
+				<nav class="heading">
+				  <a class="heading-text" href="#">Active</a>
+				  <a class="heading-text" href="#">Link</a>
+				  <a class="heading-text" href="#">Link</a>
+				</nav>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-6 mx-auto heading-contact">
+				<div class="phone-details">
+					<span class="phone-icon"><i class="fas fa-phone"></i></span>
+					<p class="phone-no">+01234567</p> 
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-7 mx-auto">
+				<button class="heading-order"><p class="order-text"><i class="fas fa-cart-arrow-down order-icon"></i><span id="total_items_count">0</span> items - $<span id="display_total_price">00.00</span></p></button>
+			</div>
+
+</div>
+
+
+<!-- Banner -->
+
+	<div class="row">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mx-auto ">
+			<div class="banban">
+			<div class="banner-background ">
+				<div class="ordered-already">
+					<ol id="order-lists">
+						<h3 class="myorderlists">My order lists</h3>
+					</ol>
+					<div class="carttotal">
+						<h3 class="total">Total</h3>
+						<h3 class="carttotalamount">$<span id="carttotalcost">0.00</span></h3>
+					</div>
+					<div class="cartbuttons">
+						<button class="confirm btn btn-primary">CONFIRM</button>
+						<button class="cancel btn btn-primary">CANCEL</button>
+					</div>
+				</div>
+				<h1 class="banner-text">Welcome to <span id="grandma">Grandma`s</span></h1>
+				<div class="explore-button-div">
+					<button class="explore">EXPLORE</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<!-- about us -->
+<div class="about-us row mt-5 pt-5 mb-5 ml-5 clear">
+	<div class="col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12 mx-auto clear">
+		<div class="row clear">
+			<!-- left part -->
+			<div class="col-xl-5 col-lg-5 col-md-10 col-sm-11 col-11 mx-auto mb-sm-5 mb-5 clear about-us-left">
+				<h1>About <span id="us">Us</span></h1>
+				<p>some text will be here some text will be heresome text will be heresome text will be heresome text will be heresome text will be heresome text will be heresome text will be here some text will be heresome text will be heresome text will be here</p>
+					<button id="about-us-button">EXPLORE</button>
+			</div>
+			<!-- right part -->
+			<div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-11 mx-auto clear right-img">
+				<div class="row">
+				<div class="about-us-right-img col-xl-10 col-lg-10 col-md-7 col-sm-8 col-9 mx-auto">
+					<img src="img/3.jpg" class="img-fluid">
+				</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<!-- our store -->
+<div class="row" style="background-color:#EEEEEE">
+	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+		<!-- our store -->
+		<div class="row">
+			<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto our-store-text mb-3">
+				<h1>Our <span id="text">Store </span></h1>
+			</div>
+		</div>	
+		<!-- buttons	 -->
+		<div class="row mb-3">
+			<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto store-options-div">
+				<button class="store-options mb-3">ALL</button>
+				<button class="store-options mb-3">CAKE</button>
+				<button class="store-options mb-3">DOUGNUT</button>
+				<button class="store-options mb-3">SWEET</button>
+				<button class="store-options mb-3">CHOCOLATE</button>
+				<button class="store-options mb-3">ICECREAM</button>
+			</div>
+		</div>		
+		<!-- search box -->
+		<div class="row mb-3">
+			<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto input-search">
+				<button id="search" ><i class="fas fa-search"></i></button>
+				<input id="input" type="text" placeholder="search items...">
+				
+			</div>
+		</div>
+
+			<!-- card items -->
+		<div class="row clear mt-3" style="background-color:#EEEEEE">
+			<div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 mx-auto clear ml-2 order-card">
+				<div class="row item-card-row clear ml-3 pt-3">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="cake1">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/cake-1.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`4Cake1`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Cake</h5>
+									<h5 class="card-title price clear">$ 4</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="cake2">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/cake-2.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`6Cake2`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Cake</h5>
+									<h5 class="card-title price clear">$ 6</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="cake3">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/cake-3.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`7Cake3`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Cake</h5>
+									<h5 class="card-title price clear">$ 7</h5>
+								  </div>
+								
+							</div>
+
+
+
+								
+				</div>
+				
+				<!-- donoghts -->
+				<div class="row item-card-row clear ml-3 pt-3">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="dougnut1">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/doughnut-1.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`5doughnut1`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Dougnut</h5>
+									<h5 class="card-title price clear">$ 5</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="dougnut2">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/doughnut-2.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`2doughnut2`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Dougnut</h5>
+									<h5 class="card-title price clear">$ 2</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="dougnut3">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/doughnut-3.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`3doughnut3`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Dougnut</h5>
+									<h5 class="card-title price clear">$ 3</h5>
+								  </div>
+								
+							</div>
+
+
+
+								
+				</div>
+				
+				<!-- sweets -->
+				<div class="row item-card-row clear ml-3 pt-3">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="sweet1">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/sweet-1.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`5sweet1`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Sweet</h5>
+									<h5 class="card-title price clear">$ 5</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="sweet2">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/sweet-2.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`6sweet2`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Sweet</h5>
+									<h5 class="card-title price clear">$ 6</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="sweet3">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/sweet-3.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`4sweet3`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Sweet</h5>
+									<h5 class="card-title price clear">$ 4</h5>
+								  </div>
+								
+							</div>
+
+
+
+								
+				</div>
+				
+				
+				<!-- chocolate -->
+				<div class="row item-card-row clear ml-3 pt-3">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="chocolate1">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/chocolate-1.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`8chocolate1`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Chocolate</h5>
+									<h5 class="card-title price clear">$ 8</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="chocolate2">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/chocolate-2.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`6chocolate2`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Chocolate</h5>
+									<h5 class="card-title price clear">$ 6</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="chocolate3">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/chocolate-3.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`9chocolate3`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Chocolate</h5>
+									<h5 class="card-title price clear">$ 9</h5>
+								  </div>
+								
+							</div>
+
+
+
+								
+				</div>
+				
+				<!-- icecream -->
+				<div class="row item-card-row clear ml-3 pt-3">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="icecream1">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/icecream-1.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`3icecream1`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Icecream</h5>
+									<h5 class="card-title price clear">$ 3</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="icecream2">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/icecream-2.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`5icecream2`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Icecream</h5>
+									<h5 class="card-title price clear">$ 5</h5>
+								  </div>
+								
+							</div>
+
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-10 mx-auto clear" id="icecream3">
+								<div class="card clear">
+									<div class="img-container clear">
+										<img src="img/icecream-3.jpg" class="card-img-top card-image clear" alt="...">
+								<span onclick="order(`4icecream3`)" class="card-img-order-icon clear">
+									<i class="fas fa-cart-arrow-down order-icon clear"></i>
+								</span>
+									</div>
+								</div>
+
+								  <div class="card-body clear">
+									<h5 class="card-title name clear">Icecream</h5>
+									<h5 class="card-title price clear">$ 4</h5>
+								  </div>
+								
+							</div>
+
+
+
+								
+				</div>
+				
+
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+<script>
+var items_array=["cake","dougnut","sweet","chocolate","icecream"];
+
+<!-- anything display krar function -->
+function display(a){
+	for(let i=1;i<4;i++){
+	const show_id=a+i;
+	document.getElementById(show_id).style.display="block";
+	
+	}
+
+	for(let j=0;j<items_array.length;j++){
+		if(a!==items_array[j]){
+			
+			document.getElementById(items_array[j]+1).style.display="none";
+			document.getElementById(items_array[j]+2).style.display="none";
+			document.getElementById(items_array[j]+3).style.display="none";
+			
+		}
+	
+	
+	}
+}
+
+function displayforC(a,b){
+	
+		for(let i=1;i<4;i++){
+	const show_id1=a+i;
+	const show_id2=b+i;
+	document.getElementById(show_id1).style.display="block";
+	document.getElementById(show_id2).style.display="block";
+	
+	}
+
+	for(let j=0;j<items_array.length;j++){
+		if((a!==items_array[j])&&(b!==items_array[j])){
+			
+			document.getElementById(items_array[j]+1).style.display="none";
+			document.getElementById(items_array[j]+2).style.display="none";
+			document.getElementById(items_array[j]+3).style.display="none";
+			
+		}
+	
+	
+	}
+}
+
+
+<!-- display all function -->
+function displayall(){
+			for(let c=0;c<items_array.length;c++){
+				for(let x=1;x<4;x++){
+				const id=items_array[c]+x;
+				document.getElementById(id).style.display="block";
+				}
+			}
+}
+
+
+
+
+const get_input=document.getElementById("input");
+get_input.addEventListener("keyup",function(e){
+
+	const type=e.target.value;
+	
+	if((type==="c")||(type==="C")){
+						
+				displayforC("cake","chocolate")
+				
+		get_input.addEventListener("keyup",function(e){
+			const typec=e.target.value;
+			if(typec==="ca"){
+				display("cake")
+			}
+			else if(typec==="ch"){
+				display("chocolate")
+			}
+			else{
+
+			}
+		})
+	}
+	
+	
+
+	
+	else if((type==="D")||(type==="d")){
+		display("dougnut");
+	}
+	
+	else if((type==="S")||(type==="s")){
+		display("sweet");
+	}
+	
+	else if((type==="I")||(type==="i")){
+		display("icecream");
+	}
+	
+	else{
+	
+	}
+})
+
+
+<!-- button click things -->
+const buttons=document.querySelector(".store-options-div");
+buttons.addEventListener("click",function(e){
+	const clicked_type=e.target.innerHTML.toLowerCase();
+		if(clicked_type==="all"){
+			
+			displayall()
+			
+		}
+		
+		else{
+			display(clicked_type);
+		}
+})
+
+
+
+/*
+document.getElementById("search").addEventListener("click",function(){
+var type=document.getElementById("input").value
+	if(type==="Cake"){
+		display("cake");
+	}
+	
+	else if(type==="Dougnut"){
+		display("dougnut");
+	}
+	
+	else if(type==="Chocolate"){
+		display("chocolate");
+	}
+	
+	else if(type==="Sweet"){
+		display("sweet");
+	}
+	
+	else if(type==="Icecream"){
+		display("icecream");
+	}
+	
+	else{
+	
+	}
+})
+*/
+
+
+
+
+<!-- order single icon function-->
+function order(parameters){
+
+	console.log(parameters);
+	const orderinfo=parameters.split("");
+	var price=parseInt(orderinfo[0]);
+	var ordertypenmbr=orderinfo[orderinfo.length-1];
+	
+	var ordertype=[];
+	for(let i=1;i<orderinfo.length-1;i++){
+		ordertype=ordertype+orderinfo[i]
+	}
+	
+
+
+
+	var Display_total_price=document.getElementById("display_total_price").innerHTML;
+	var Total_items_count=document.getElementById("total_items_count").innerHTML;
+	var Display_total_price_cal=parseFloat(Display_total_price)+price;
+	document.getElementById("display_total_price").innerHTML=Display_total_price_cal;
+	<!-- cart er total cost  -->
+	document.getElementById("carttotalcost").innerHTML=Display_total_price_cal;
+	
+	var Total_items_count_cal=parseInt(Total_items_count)+1;
+	document.getElementById("total_items_count").innerHTML=Total_items_count_cal;
+	
+	<!-- work in ordered things already section -->
+	const mainlists=document.getElementById("order-lists");
+	<!-- const row=document.createElement("tr"); -->
+
+	const list=document.createElement("li");
+	
+	
+	const item=document.createElement("h6");
+	item.textContent=ordertype;
+	
+	
+	item.className="list";
+	list.className="wholelist";
+	
+	const image=document.createElement("img");
+	image.className="image"
+	<!-- image.src= "img/doughnut-1.jpg"; -->
+	image.src= "img/"+ordertype+"-"+ordertypenmbr+".jpg";
+	
+	
+	const daam=document.createElement("h6");
+	daam.textContent="$"+orderinfo[0];
+	daam.className="daam";
+	
+	
+
+
+	<!-- row.appendChild(list); -->
+	const listdelete=document.createElement("i");
+	<!-- listdelete.textContent=<i class="fas fa-phone"></i>; -->
+	listdelete.className="listdelete fas fa-trash-alt";
+	
+	
+	list.appendChild(item);
+	list.appendChild(image);
+	list.appendChild(daam);
+	list.appendChild(listdelete);
+
+	<!-- row.className="listrow"; -->
+	mainlists.appendChild(list);
+
+	<!-- delete button -->
+	listdelete.addEventListener("click",function(e){
+		<!-- const baadprice=list.lastChild.previousSibling.innerHTML;//font awesome delete icon er jonno aikhane problem hoi bcoz last child dhorte pare na. -->
+		const baadprice=list.lastElementChild.previousSibling.innerHTML[1];//innerhtml e ashole $ sign soho "$4" ai jatio ashe, so eta to ar calculate kra jai na, ai jonno last a [1] dia last j string ase "4" seita dhora holo.
+		console.log(baadprice);
+		list.remove();
+		 <!-- updating total price -->
+		const gettotalprice=document.getElementById("display_total_price").innerHTML;
+		const updatetotalprice=parseInt(gettotalprice)-parseInt(baadprice);
+		 console.log(gettotalprice);
+		document.getElementById("display_total_price").innerHTML=updatetotalprice; 
+		<!-- cart er total ta delete button click er sathe fix kra -->
+		document.getElementById("carttotalcost").innerHTML=updatetotalprice; 
+		
+		<!-- updating total items count -->
+		const gettotalitems=document.getElementById("total_items_count").innerHTML;
+		const updatetotalitemscount=parseInt(gettotalitems)-1;
+		 console.log(gettotalitems);
+		document.getElementById("total_items_count").innerHTML=updatetotalitemscount;
+	})
+	
+		alert(`${ordertype} $${price} added to the card`);
+}
+	
+<!-- top most right side button total price and items game -->
+const totalbutton=document.querySelector(".heading-order");
+totalbutton.addEventListener("click",function(){
+	document.querySelector(".ordered-already").style.display="block";
+})
+
+<!-- ordered things already  confirm-->
+const confirm=document.querySelector(".confirm");
+confirm.addEventListener("click",function(){
+	document.querySelector(".ordered-already").style.display="none";
+})
+
+<!-- ordered things already cancel -->
+const cancel=document.querySelector(".cancel");
+cancel.addEventListener("click",function(){
+	
+	const x=document.getElementById("order-lists");
+	const y=document.querySelectorAll(".wholelist");
+	for(let c=0;c<y.length;c++){
+		y[c].remove();
+	}
+	
+	document.getElementById("total_items_count").innerHTML="0";
+	document.getElementById("display_total_price").innerHTML="00.00"; 
+	<!-- cart er total cost -->
+	document.getElementById("carttotalcost").innerHTML="00.00"; 
+	
+	document.querySelector(".ordered-already").style.display="none";
+})
+
+
+
+
+</script>
+</body>
+</html>
